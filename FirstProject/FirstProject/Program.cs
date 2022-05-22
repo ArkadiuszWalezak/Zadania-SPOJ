@@ -10,6 +10,7 @@ public class Program
     {
         while (true)
         {
+
             string input = Console.ReadLine(); //a b
             string[] subs = input.Split(' ');
             double da;
