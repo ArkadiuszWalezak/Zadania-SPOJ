@@ -7,22 +7,30 @@ namespace Zadania_liczby_pierwsze
     {
         static void Main(string[] args)
         {
-            while (true)
+
+            int i = 0;
+
+            Console.Write("Teraz podaj byczqu, ile liczb chciałbyś sprawdzić, czy są pierwsze: ");
+
+            int x = int.Parse(Console.ReadLine());
+
+            while (i < x)
             {
                 double liczba = Double.Parse(Console.ReadLine());
 
                 if (Pierwsza(liczba))
                 {
-                    Console.WriteLine("Powinna być pierwsza");
+                    Console.WriteLine("No jest totalnie pierwsza");
                 }
                 else
                 {
                     Console.WriteLine("Nie jest pierwsza");
                 }
+                i++;
             }
+            Console.ReadKey();
         }
-        
-        
+
         public static bool Pierwsza(double liczba)
         {
             if (liczba == 1)
@@ -47,11 +55,10 @@ namespace Zadania_liczby_pierwsze
                     }
                 }
 
-            return true;
+                return true;
+
             }
-
-
-    }
+        }
     }
 }
 
