@@ -21,7 +21,6 @@ namespace Zadanie_SPOJ_496___dwie_cyfry_silni
             while (y < x)
             {
                 n[z] = double.Parse(Console.ReadLine());
-                z++;
                 y++;
             }
             
@@ -34,22 +33,6 @@ namespace Zadanie_SPOJ_496___dwie_cyfry_silni
             }
 
             Console.ReadKey();
-
-        }
-    }
-
-    public class Mierzewa
-    {
-        public static double Silnia(double liczba)
-        {
-            double n = 1;
-
-            for (double i = 1; i <= liczba; i++)
-            {
-                n = n * i;
-            }
-            liczba = n;
-            return liczba;
         }
     }
 }
