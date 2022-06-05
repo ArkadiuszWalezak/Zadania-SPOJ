@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{786D96C4-19CE-482F-8A6E-72E37838A272}</ProjectGuid>
+    <ProjectGuid>{A7BAB421-8C56-4947-B969-1F15DF5BE4E5}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Zadanie_SPOJ_496___dwie_cyfry_silni</RootNamespace>
-    <AssemblyName>Zadanie SPOJ 496 - dwie cyfry silni</AssemblyName>
+    <RootNamespace>SpojExercises</RootNamespace>
+    <AssemblyName>SpojExercises</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Mierzewa.cs" />
+    <Compile Include="FactorialExcersiseClass.cs" />
+    <Compile Include="LowestCommonMultipleExerciseClass.cs" />
+    <Compile Include="PalindromeExerciseClass.cs" />
+    <Compile Include="PrimeNumbersClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

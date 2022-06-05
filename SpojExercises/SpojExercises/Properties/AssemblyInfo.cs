@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Ogólne informacje o zestawie są kontrolowane poprzez następujący 
 // zestaw atrybutów. Zmień wartości tych atrybutów, aby zmodyfikować informacje
 // powiązane z zestawem.
-[assembly: AssemblyTitle("Zadania liczby pierwsze")]
+[assembly: AssemblyTitle("SpojExercises")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Zadania liczby pierwsze")]
+[assembly: AssemblyProduct("SpojExercises")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Następujący identyfikator GUID jest identyfikatorem biblioteki typów w przypadku udostępnienia tego projektu w modelu COM
-[assembly: Guid("9e6ef3fb-a980-4e01-8091-ffae559b4e57")]
+[assembly: Guid("a7bab421-8c56-4947-b969-1f15df5be4e5")]
 
 // Informacje o wersji zestawu zawierają następujące cztery wartości:
 //

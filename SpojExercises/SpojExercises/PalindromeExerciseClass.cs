@@ -1,15 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace ZabawneDodawaniePiotrusia
+namespace SpojExercises
 {
-    class Program
+    public class PalindromeExerciseClass
     {
-        static void Main()
+        public static void Run()
         {
             int reverse;
             int input = int.Parse(Console.ReadLine());
 
-            for ( ; ; )
+            for (; ; )
             {
                 string x = StringReverse(input);
                 reverse = int.Parse(x);
@@ -21,7 +25,9 @@ namespace ZabawneDodawaniePiotrusia
                 if (resultString == resultStringReverse)
                 {
                     Console.WriteLine(resultString);
-                    return;
+                    Console.WriteLine("Wcisnij enter zeby zakonczyc i rozpoczac nowy program (if exists XD)");
+                    Console.ReadLine();
+                    break;
                 }
                 else
                 {
@@ -31,7 +37,7 @@ namespace ZabawneDodawaniePiotrusia
 
         }
 
-        public static string StringReverse(int input)
+        private static string StringReverse(int input)
         {
             string x = input.ToString();
             char[] z = x.ToCharArray();
@@ -39,5 +45,6 @@ namespace ZabawneDodawaniePiotrusia
             string reversed = new string(z);
             return reversed;
         }
+    
     }
 }

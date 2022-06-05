@@ -1,13 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-
-namespace Zadania_liczby_pierwsze
+namespace SpojExercises
 {
-    public class Program
+    public class PrimeNumbersClass
     {
-        static void Main(string[] args)
+        public static void Run()
         {
-
             int i = 0;
 
             Console.Write("Teraz podaj byczqu, ile liczb chciałbyś sprawdzić, czy są pierwsze: ");
@@ -18,7 +20,7 @@ namespace Zadania_liczby_pierwsze
             {
                 double liczba = Double.Parse(Console.ReadLine());
 
-                if (Pierwsza(liczba))
+                if (Prime(liczba))
                 {
                     Console.WriteLine("No jest totalnie pierwsza");
                 }
@@ -28,38 +30,36 @@ namespace Zadania_liczby_pierwsze
                 }
                 i++;
             }
+
+            Console.WriteLine("Wcisnij enter zeby zakonczyc i rozpoczac nowy program (if exists XD)");
             Console.ReadKey();
         }
 
-        public static bool Pierwsza(double liczba)
+        public static bool Prime(double number)
         {
-            if (liczba == 1)
+            if (number == 1)
             {
                 return false;
             }
-            if (liczba == 2)
+            if (number == 2)
             {
                 return true;
             }
-            if (liczba % 2 == 0)
+            if (number % 2 == 0)
             {
                 return false;
             }
             else
             {
-                for (int i = 3; i < liczba; i += 2)
+                for (int i = 3; i < number; i += 2)
                 {
-                    if ((liczba % i) == 0)
+                    if ((number % i) == 0)
                     {
                         return false;
                     }
                 }
-
                 return true;
-
             }
         }
     }
 }
-
-

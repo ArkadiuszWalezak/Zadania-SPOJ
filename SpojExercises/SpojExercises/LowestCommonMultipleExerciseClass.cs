@@ -1,10 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Zadanie_522___Przedszkolanka
+namespace SpojExercises
 {
-    public class Program
+    public class LowestCommonMultipleExerciseClass
     {
-        static void Main(string[] args)
+        public static void Run()
         {
             int l = 0;
             int p = 0;
@@ -26,24 +30,25 @@ namespace Zadanie_522___Przedszkolanka
             while (p < x)
             {
                 Console.WriteLine("Wynik: ");
-                Console.WriteLine(NWW(n[p],m[p]));
+                Console.WriteLine(NWW(n[p], m[p]));
                 p++;
             }
+            Console.WriteLine("Wcisnij enter zeby zakonczyc i rozpoczac nowy program (if exists XD)");
             Console.ReadKey();
         }
 
         public static int NWW(int a, int b)
         {
-            int num1, num2;                 
-            
+            int num1, num2;
+
             if (a > b)
             {
-                num1 = a; 
+                num1 = a;
                 num2 = b;
-            } 
+            }
             else
             {
-                num1 = b; 
+                num1 = b;
                 num2 = a;
             }
 
@@ -56,5 +61,6 @@ namespace Zadanie_522___Przedszkolanka
             }
             return num2;
         }
+
     }
 }
