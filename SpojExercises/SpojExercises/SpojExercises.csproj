@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommonPartOfTwoCircles.cs" />
     <Compile Include="FactorialExcersiseClass.cs" />
     <Compile Include="LowestCommonMultipleExerciseClass.cs" />
     <Compile Include="PalindromeExerciseClass.cs" />

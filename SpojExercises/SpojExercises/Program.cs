@@ -10,10 +10,11 @@ namespace SpojExercises
     {
         static void Main(string[] args)
         {
-            PrimeNumbersClass.Run();
-            PalindromeExerciseClass.Run();
-            LowestCommonMultipleExerciseClass.Run();
-            FactorialExcersiseClass.Run();
+            //PrimeNumbersClass.Run();
+            //PalindromeExerciseClass.Run();
+            //LowestCommonMultipleExerciseClass.Run();
+            //FactorialExcersiseClass.Run();
+            CommonPartOfTwoCircles.Run();
         }
     }
 }
