@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace CounterProject
 {
-    internal class Statyczna
+    public class Statyczna
     {
         int I;
         static int liczba;
+
+        public Statyczna()
+        {
+            Zwieksz();
+            I = 0;
+        }
 
         public static void Zwieksz()
         {

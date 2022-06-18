@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{45B7A444-FCF4-468C-9403-835F0C99FC31}</ProjectGuid>
+    <ProjectGuid>{AB3B56D9-1284-43E0-9497-292DDBE9B58B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CounterProject</RootNamespace>
-    <AssemblyName>CounterProject</AssemblyName>
+    <RootNamespace>ReadingRoomProject</RootNamespace>
+    <AssemblyName>ReadingRoomProject</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,13 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Counter.cs" />
-    <Compile Include="Data.cs" />
-    <Compile Include="Licz.cs" />
+    <Compile Include="Book.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Statyczna.cs" />
-    <Compile Include="Sumator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

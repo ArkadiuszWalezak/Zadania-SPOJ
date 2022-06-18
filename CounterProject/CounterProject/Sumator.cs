@@ -6,7 +6,10 @@ namespace CounterProject
     {
         private int[] Liczby;
 
-        Sumator s1 = new Sumator();
+        public Sumator(int[] a)
+        {
+            Liczby = a;
+        }
 
         public int Suma()
         {
@@ -34,14 +37,38 @@ namespace CounterProject
             {
                 Console.WriteLine(Liczby[a]);
                 a++;
-                 
             }
+
+            Console.ReadKey();
         }
-        //public int Index(int lowIndex, int highIndex)
-        //{
-        //    //kurde nie za bardzo kumam, zadanie 2e
-        //}
 
+        public void Index(int lowIndex, int highIndex)
+        {
+            if (lowIndex < 0)
+            {
+                Console.WriteLine("Podałeś za mały low index, ustawiłem go na najniższą wartość");
+                lowIndex = 0;
+            }
 
+            if (highIndex > Liczby.Length)
+            {
+                Console.WriteLine("Podałeś za duży high index, ustawiłem go na najwyższą wartoś");
+                highIndex = Liczby.Length;
+            }
+
+            if (lowIndex > highIndex)
+            {
+                int temp = lowIndex;
+                lowIndex = highIndex;
+                highIndex = temp;
+            }
+
+            for (int i = lowIndex; i < highIndex; i++)
+            {
+                Console.WriteLine(Liczby[i]);
+            }
+            Console.ReadKey();
+
+        }
     }
 }
