@@ -44,8 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Counter.cs" />
+    <Compile Include="Licz.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Statyczna.cs" />
+    <Compile Include="Sumator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
