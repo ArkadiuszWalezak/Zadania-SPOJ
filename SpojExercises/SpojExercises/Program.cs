@@ -14,7 +14,8 @@ namespace SpojExercises
             //PalindromeExerciseClass.Run();
             //LowestCommonMultipleExerciseClass.Run();
             //FactorialExcersiseClass.Run();
-            CommonPartOfTwoCircles.Run();
+            //CommonPartOfTwoCircles.Run();
+            Christmastree.Run();
         }
     }
 }
