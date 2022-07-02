@@ -1,31 +1,32 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LaborkiPO
 {
     public class Garaz
     {
-        private string adres
+        private Samochod[] samochody;
+        private int liczbaSamochodow = 0;
+
+
+        private string adres;
+        public string Adres 
         {
-            set { adres = value;}
             get { return adres; }
+            set { adres = value;} 
         }
-        private int pojemnosc
+
+        private int pojemnosc;
+        public int Pojemnosc
         {
             set 
             { 
                 pojemnosc = value;
                 samochody = new Samochod[pojemnosc];
             }
-            
             get { return pojemnosc; }
         }
 
-        private Samochod[] samochody;
-        private int liczbaSamochodow = 0;
+        
 
         public Garaz()
         {
@@ -47,31 +48,42 @@ namespace LaborkiPO
             {
                 Console.WriteLine("Garaż pełny.");
             }
-
             else
             {
-                samochod = samochody[liczbaSamochodow];
+                samochody[liczbaSamochodow] = samochod;
                 liczbaSamochodow++;
             }
 
-            Console.WriteLine("Liczba wolnych miejsc postojowych {0}/{1}",liczbaSamochodow,pojemnosc);
-            
+            //Console.WriteLine("Liczba wolnych miejsc postojowych {0}/{1}", liczbaSamochodow, pojemnosc);
         }
 
         public Samochod WyprowadzSamochod()
         {
-            if (pojemnosc == 0)
+            Samochod x;
+
+            if (liczbaSamochodow == 0)
             {
                 Console.WriteLine("Garaż jest pusty.");
+                x = null;
             }
             else
             {
-                samochody[liczbaSamochodow] = null;
                 liczbaSamochodow--;
+                x = samochody[liczbaSamochodow];
+                samochody[liczbaSamochodow] = null;
             }
-            return Samochod
 
+            return x;
         }
+        public void WypiszInfo()
+        {
+            Console.WriteLine("Adres: {0}", adres);
+            Console.WriteLine("Pojemnosc: {0}", pojemnosc);
 
+            for (int i = 0; i < pojemnosc - 1; i++)
+            {
+                samochody[i].WypiszInfo();
+            }
+        }
     }
 }

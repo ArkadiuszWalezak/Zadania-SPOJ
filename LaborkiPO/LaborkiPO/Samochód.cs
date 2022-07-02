@@ -32,7 +32,8 @@ namespace LaborkiPO
             this.srednieSpalanie = srednieSpalanie;
             iloscSamochodów++;
         }
-        public double ObliczSpalanie(double dlugoscTrasy)
+
+        public double ObliczSpalanie(double dlugoscTrasy) 
         {
             double x = dlugoscTrasy * srednieSpalanie / 100;
             double dziedziczonko = x;
@@ -47,14 +48,12 @@ namespace LaborkiPO
 
         public void WypiszInfo()
         {
-            Console.WriteLine("Marka: {0}, model: {1}, ilość drzwi = {2}, pojemność silnika = {3}, srednieSpalanie = {4}",marka,model,iloscDrzwi,pojemnoscSilnika,srednieSpalanie);
-
+            Console.WriteLine("Marka: {0}, model: {1}, ilość drzwi = {2}, pojemność silnika = {3}, srednieSpalanie = {4}", marka, model, iloscDrzwi, pojemnoscSilnika, srednieSpalanie);
         }
+
         public static void WypiszIloscSamochodow()
         {
             Console.WriteLine(iloscSamochodów);
         }
-
-
     }
 }
