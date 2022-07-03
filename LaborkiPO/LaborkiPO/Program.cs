@@ -33,8 +33,8 @@ namespace LaborkiPO
             //Console.ReadKey();
 
             //--------ZAD 2--------
-            Samochod s1 = new Samochod("Fiat", "126p", 2, 650, 6.0);
-            Samochod s2 = new Samochod("Syrena", "105", 2, 800, 7.6);
+            Samochod s1 = new OsobowySamochod("Fiat", "126p", 2, 650, 6.0);
+            CiezarowySamochod s2 = new CiezarowySamochod("Syrena", "105", 2, 800, 7.6, 800);
             Garaz g1 = new Garaz();
             g1.Adres = "ul. Garażowa 1";
             g1.Pojemnosc = 1;

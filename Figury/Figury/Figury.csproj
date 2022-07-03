@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A52C7BBA-F6A1-41CC-9E5E-C1DE4A472D14}</ProjectGuid>
+    <ProjectGuid>{61501B5F-007C-4222-87DF-59EC77E997AD}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LaborkiPO</RootNamespace>
-    <AssemblyName>LaborkiPO</AssemblyName>
+    <RootNamespace>Figury</RootNamespace>
+    <AssemblyName>Figury</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CiezarowySamochod.cs" />
-    <Compile Include="Garaz.cs" />
-    <Compile Include="OsobowySamochod.cs" />
+    <Compile Include="Figura.cs" />
+    <Compile Include="Kolo.cs" />
+    <Compile Include="Kwadrat.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Samochód.cs" />
+    <Compile Include="Trojkat.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

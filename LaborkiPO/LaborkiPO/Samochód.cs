@@ -1,15 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LaborkiPO
 {
-    public class Samochod
+    public abstract class Samochod
     {
-        public string marka, model;
-        public int iloscDrzwi, pojemnoscSilnika;
+        public string marka;
+        public string model;
+        public int iloscDrzwi;
+        public int pojemnoscSilnika;
         public double srednieSpalanie;
         private static int iloscSamochodów = 0;
 

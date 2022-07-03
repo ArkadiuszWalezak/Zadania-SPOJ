@@ -26,8 +26,6 @@ namespace LaborkiPO
             get { return pojemnosc; }
         }
 
-        
-
         public Garaz()
         {
             adres = "nieznany";
@@ -79,6 +77,18 @@ namespace LaborkiPO
         {
             Console.WriteLine("Adres: {0}", adres);
             Console.WriteLine("Pojemnosc: {0}", pojemnosc);
+
+            // samochody :
+            // {
+            //     [0] [Samochod] : { marka: "Fiat", model: "126p", .... }  
+            //     [1] [Samochod] : { marka: "Syrena", model: "105", .... }
+            //     [2] [Samochod] : { marka: "Fiat", model: "126p", .... } 
+            //     [3] [Samochod] : { marka: "Syrena", model: "105", .... }
+            //     [4] [Samochod] : { marka: "Fiat", model: "126p", .... } 
+            //     [5] [Samochod] : { marka: "Syrena", model: "105", .... }
+            //     [6] [Samochod] : { marka: "Fiat", model: "126p", .... } 
+            //     [7] [Samochod] : { marka: "Syrena", model: "105", .... }
+            // {
 
             for (int i = 0; i < pojemnosc - 1; i++)
             {
