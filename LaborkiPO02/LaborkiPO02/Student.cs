@@ -33,7 +33,7 @@ namespace LaborkiPO02
             for (int i = 0; i < oceny.Count; i++)
             {
                 Ocena o = oceny[i];
-                Console.WriteLine(o);
+                o.WypiszInfo();
             }
         }
 
@@ -95,7 +95,7 @@ namespace LaborkiPO02
             
             for (int i = 0; i < oceny.Count; i++)
             {
-                Console.WriteLine(oceny[i]);
+                oceny[i].WypiszInfo();
             }
         }
     }
