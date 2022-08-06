@@ -15,7 +15,10 @@ namespace SpojExercises
             //LowestCommonMultipleExerciseClass.Run();
             //FactorialExcersiseClass.Run();
             //CommonPartOfTwoCircles.Run();
-            Christmastree.Run();
+            //Christmastree.Run();
+            EukllidesGame.Run();
+
+            Console.ReadKey();
         }
     }
 }

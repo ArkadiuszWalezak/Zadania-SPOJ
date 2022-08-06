@@ -6,29 +6,16 @@ using System.Threading.Tasks;
 
 namespace LaborkiPO03
 {
-    public class Autor
+    public class Autor : Osoba
     {
-        private string imie;
-
-        public string Imie 
-        { 
-            get { return imie; } 
-            set { imie = value; } 
-        }
-        
-        private string nazwisko;
-        public string Nazwisko
-        {
-            get { return nazwisko; }
-            set { nazwisko = value; }
-        }
-
+        private string narodowosc;
         public Autor() { }
 
-        public Autor(string imie, string nazwisko)
+        public Autor(string imie, string nazwisko, string narodowosc)
         {
             this.imie = imie;
             this.nazwisko = nazwisko;
+            this.narodowosc = narodowosc;
         }
     }
 }

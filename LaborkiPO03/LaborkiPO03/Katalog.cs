@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LaborkiPO03
 {
-    public class Katalog
+    public class Katalog : IZarzadzaniePozycjami
     {
         private string dzialTematyczny;
 
@@ -16,7 +16,7 @@ namespace LaborkiPO03
             set { dzialTematyczny = value; }
         }
 
-        private List<Pozycja> katalog = new List<Pozycja>();
+        public List<Pozycja> katalog = new List<Pozycja>();
 
         public Katalog() { }
 

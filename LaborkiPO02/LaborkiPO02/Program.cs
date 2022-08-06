@@ -51,9 +51,18 @@ namespace LaborkiPO02
             s.WypiszInfo();
 
             s.DodajOcene("AWWW", "02.04.2011", 4.5);
-            s.UsunOcene();
+            s.UsunOceny();
 
             s.WypiszOceny();
+
+            s.DodajOcene("Matematyka", "10.04.2022", 5);
+            s.DodajOcene("Bazy danych", "01.05.2011", 5.0);
+            s.DodajOcene("Matematyka", "11.04.2022", 4.5);
+            s.DodajOcene("Historia", "11.05.2011", 5.0);
+            s.DodajOcene("Matematyka", "12.04.2022", 4);
+            s.DodajOcene("Programowanie obiektowe", "02.04.2011", 4.5);
+
+            s.WypiszOceny("Matematyka");
 
             Console.ReadKey();
         }

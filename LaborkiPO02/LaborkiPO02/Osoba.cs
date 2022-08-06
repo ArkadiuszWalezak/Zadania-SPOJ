@@ -10,11 +10,11 @@ namespace LaborkiPO02
 
         public Osoba() { }
 
-        public Osoba (string imie, string nazwisko, string dataUrodzienia)
+        public Osoba (string imie, string nazwisko, string dataUrodzenia)
         {
             this.imie = imie;
             this.nazwisko = nazwisko;
-            this.dataUrodzenia = dataUrodzienia;
+            this.dataUrodzenia = dataUrodzenia;
         }
 
         public virtual void WypiszInfo()

@@ -44,9 +44,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Autor.cs" />
+    <Compile Include="Biblioteka.cs" />
+    <Compile Include="Bibliotekarz.cs" />
     <Compile Include="Czasopismo.cs" />
+    <Compile Include="IZarzadzaniePozycjami.cs" />
     <Compile Include="Katalog.cs" />
     <Compile Include="Ksiazka.cs" />
+    <Compile Include="Osoba.cs" />
     <Compile Include="Pozycja.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

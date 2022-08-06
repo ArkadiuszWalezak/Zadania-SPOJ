@@ -4,9 +4,9 @@ namespace LaborkiPO02
 {
     public class Pilkarz : Osoba
     {
-        private string pozycja;
-        private string klub;
-        public int liczbaGoli = 0;
+        protected string pozycja;
+        protected string klub;
+        private int liczbaGoli = 0;
 
         public Pilkarz() { }
 
@@ -19,7 +19,7 @@ namespace LaborkiPO02
             this.dataUrodzenia = dataUrodzenia;
         }
 
-        public void StrzelGola()
+        public virtual void StrzelGola()
         {
             liczbaGoli++;
         }

@@ -14,14 +14,15 @@ namespace LaborkiPO02
             get { return nazwaPrzedmiotu; }
             set { nazwaPrzedmiotu = value; }
         }
+
         private string data;
         public string Data
         {
             get { return data; }
             set { data = value; }
         }
-        private double wartosc;
 
+        private double wartosc;
         public double Wartosc
         {
             get { return wartosc; }

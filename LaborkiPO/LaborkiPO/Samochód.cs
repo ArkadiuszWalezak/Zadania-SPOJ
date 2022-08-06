@@ -10,6 +10,7 @@ namespace LaborkiPO
         public int pojemnoscSilnika;
         public double srednieSpalanie;
         private static int iloscSamochodów = 0;
+        public string numerRejestracyjny;
 
         public Samochod()
         {
@@ -21,13 +22,14 @@ namespace LaborkiPO
             iloscSamochodów++;
         }
 
-        public Samochod(string marka, string model, int iloscDrzwi, int pojemnoscSilnika, double srednieSpalanie)
+        public Samochod(string marka, string model, int iloscDrzwi, int pojemnoscSilnika, double srednieSpalanie, string numerRejestracyjny)
         {
             this.marka = marka;
             this.model = model;
             this.iloscDrzwi = iloscDrzwi;
             this.pojemnoscSilnika = pojemnoscSilnika;
             this.srednieSpalanie = srednieSpalanie;
+            this.numerRejestracyjny = numerRejestracyjny;
             iloscSamochodów++;
         }
 
