@@ -9,6 +9,7 @@ namespace LaborkiPO03
     public class Autor : Osoba
     {
         private string narodowosc;
+
         public Autor() { }
 
         public Autor(string imie, string nazwisko, string narodowosc)
@@ -16,6 +17,11 @@ namespace LaborkiPO03
             this.imie = imie;
             this.nazwisko = nazwisko;
             this.narodowosc = narodowosc;
+        }
+
+        public override void WypiszInfo()
+        {
+            Console.WriteLine(imie + ' ' + nazwisko + ' ' + narodowosc);
         }
     }
 }

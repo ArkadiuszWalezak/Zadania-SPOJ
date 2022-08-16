@@ -9,7 +9,11 @@ namespace LaborkiPO03
     public abstract class Pozycja
     {
         protected string tytul;
+        public string Tytul => tytul;
+
         protected int id;
+        public int Id => id;
+
         protected string wydawnictwo;
         protected int rokWydania;
 
@@ -23,9 +27,6 @@ namespace LaborkiPO03
             this.rokWydania = rokWydania;
         }
 
-        public virtual void WypiszInfo()
-        {
-            Console.WriteLine(tytul + ' ' + id + ' ' + wydawnictwo + ' ' + rokWydania);
-        }
+        public abstract void WypiszInfo();
     }
 }

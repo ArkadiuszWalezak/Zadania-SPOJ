@@ -8,19 +8,8 @@ namespace LaborkiPO03
 {
     interface IZarzadzaniePozycjami
     {
-        public void ZnajdzPozycjePoTytule(string tytul)
-        {
-
-        }
-
-        public void ZnajdzPozycjePoId(int id)
-        {
-
-        }
-
-        public void WypiszWszystkiePozycje()
-        {
-
-        }
+        Pozycja ZnajdzPozycjePoTytule(string tytul);
+        Pozycja ZnajdzPozycjePoId(int id);
+        void WypiszWszystkiePozycje();
     }
 }

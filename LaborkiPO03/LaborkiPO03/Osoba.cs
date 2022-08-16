@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LaborkiPO03
 {
-    public class Osoba
+    public abstract class Osoba
     {
         protected string imie;
 
@@ -31,5 +31,7 @@ namespace LaborkiPO03
             this.imie = imie;
             this.nazwisko = nazwisko;
         }
+
+        public abstract void WypiszInfo();
     }
 }

@@ -27,9 +27,8 @@ namespace LaborkiPO03
             this.liczbaStron = liczbaStron;
         }
 
-        public void DodajAutora(string imie, string nazwisko, string narodowosc)
+        public void DodajAutora(Autor a)
         {
-            Autor a = new Autor(imie, nazwisko, narodowosc);
             autorList.Add(a);
         }
 

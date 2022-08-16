@@ -19,7 +19,7 @@ namespace SpojExercises
             for (int i = 0; i < x; i++)
             {
                 string k = Console.ReadLine();  
-                string [] vs = k.Split(' ');
+                string[] vs = k.Split(' ');
                 int e = int.Parse(vs[0]);
                 int g = int.Parse(vs[1]);
                 a[i] = e;
@@ -38,7 +38,6 @@ namespace SpojExercises
                     num1 = k;
                     num2 = l;
                 }
-
                 else
                 {
                     num1 = l;
@@ -49,7 +48,6 @@ namespace SpojExercises
                 {
                     Console.WriteLine("Ilość żetonów końcowych to " + num2 * 2);
                 }
-                
                 else 
                 {
                     if (num1 > num2)

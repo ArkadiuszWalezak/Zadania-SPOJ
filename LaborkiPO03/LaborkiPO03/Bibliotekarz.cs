@@ -20,5 +20,10 @@ namespace LaborkiPO03
             this.dataZatrudnienia = dataZatrudnienia;
             this.wynagrodzenie = wynagrodzenie;
         }
+
+        public override void WypiszInfo()
+        {
+            Console.WriteLine(imie + ' ' + nazwisko + ' ' + dataZatrudnienia + ' ' + wynagrodzenie);
+        }
     }
 }
