@@ -14,6 +14,7 @@ namespace LaborkiPO03
             get { return liczbaStron; }
             set { liczbaStron = value; }
         }
+       
         private List<Autor> autorList = new List<Autor>();
 
         public Ksiazka() { }

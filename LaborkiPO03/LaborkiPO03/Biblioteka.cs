@@ -168,6 +168,8 @@ namespace LaborkiPO03
                 }
                 else
                 {
+                    Console.Clear();
+                    Console.WriteLine("Do zobaczenia " + zalogowanyBibliotekarz.Imie + ' ' + zalogowanyBibliotekarz.Nazwisko);
                     Console.ReadKey();
                 }
             }
@@ -296,8 +298,8 @@ namespace LaborkiPO03
             Console.WriteLine("W którym katalogu chciałbyś usunąć pozycje?");
             int numerCzynnosci = int.Parse(Console.ReadLine());
 
-            if (biblioteka[numerCzynnosci - 1].DzialTematyczny.Any() == 
-                )
+            if (biblioteka[numerCzynnosci - 1].DzialTematyczny.Any() == false)
+                
             {
                 Console.WriteLine("Wybrana biblioteka jest pusta. Nastąpi przejscie do ekranu powitalnego");
                 Console.ReadKey();
