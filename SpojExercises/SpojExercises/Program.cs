@@ -16,8 +16,10 @@ namespace SpojExercises
             //FactorialExcersiseClass.Run();
             //CommonPartOfTwoCircles.Run();
             //Christmastree.Run();
-            EukllidesGame.Run();
-
+            //EukllidesGame.Run();
+            //Pesel.Run();
+            //Snake.Run();
+            Stefan.Run();
             Console.ReadKey();
         }
     }

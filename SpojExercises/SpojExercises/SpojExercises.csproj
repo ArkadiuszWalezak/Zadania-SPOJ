@@ -49,9 +49,12 @@
     <Compile Include="FactorialExcersiseClass.cs" />
     <Compile Include="LowestCommonMultipleExerciseClass.cs" />
     <Compile Include="PalindromeExerciseClass.cs" />
+    <Compile Include="Pesel.cs" />
     <Compile Include="PrimeNumbersClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Snake.cs" />
+    <Compile Include="Stefan.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
