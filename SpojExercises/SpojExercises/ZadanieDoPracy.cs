@@ -42,13 +42,17 @@ namespace SpojExercises
                 for (int x = 0; x < banknotesLinq.Count(); x++)
                 {
                     int tempcash = 0;
-                    while (banknotesLinq[x] < cash)
+                    while (banknotesLinq[x] <= cash)
                     {
                         cash = cash - banknotesLinq[x];
                         tempcash++;
                     }
                         Console.WriteLine("Potrzeba {0} nominałów {1}.", tempcash, banknotesLinq[x]);
                 }
+            }
+            else
+            {
+                Console.WriteLine("Nie podałeś poprawnej liczby");
             }
         }
     }
