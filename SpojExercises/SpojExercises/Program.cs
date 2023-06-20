@@ -19,7 +19,10 @@ namespace SpojExercises
             //EukllidesGame.Run();
             //Pesel.Run();
             //Snake.Run();
-            Stefan.Run();
+            //Stefan.Run();
+            //Samolot.Run();
+            //Reverse.Run();
+            ZadanieDoPracy.Run();
             Console.ReadKey();
         }
     }

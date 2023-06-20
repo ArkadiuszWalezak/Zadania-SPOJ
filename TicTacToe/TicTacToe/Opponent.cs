@@ -42,7 +42,7 @@ namespace TicTacToe
                     currentGamerPoints.Add(point);
                 }
             }
-
+            
             int counter = 0;
 
             XPosibleWin = true;
